@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<script src="js/snowflakeCursor.js" type="text/javascript" charset="utf-8"></script>
+		<title>中秋节</title>
+		
+	</head>
+	<body>
+		<div id="header">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="wish.html">中秋祝福</a>
+				</li>
+				<li>
+					<a href="legends.html">中秋传说</a>
+				</li>
+				<li>
+					<a href="photos.html">中秋相册</a>
+				</li>
+				<li>
+					<a href="custom.html">文化遗产</a>
+				</li>
+			</ul>
+		</div>
+		
+				<div id="container">
+					<h2>文化遗产</h2>
+					<div>
+						<h3>佛山秋色</h3>
+						<p>“佛山秋色”是佛山民间传统庆丰收的大型综合性群众性文化艺术活动。2008年被国务院公布为第一批国家级非物质文化遗产扩展项目。</p>
+						<img src="img/foshanqiuse-wushi.jpg" >
+						<p>“佛山秋色”质朴纯真、健康清新，是最生动、最丰富的原始艺术、乡土艺术、风俗艺术。相传起源于两晋时期，肇端于儿童舞草龙庆丰收的“孩童耍乐”。明正统十四年（1449年）定名为秋色。“秋色”意为佛山金秋的景色，因在中秋节前后的月明之夜、以大巡游的形式举行，故又称为“秋宵”、“出秋色”、“出秋景”。明代中叶至清，佛山农业、手工业和商业的发展和繁荣，使之成为全国四大名镇之一，“佛山秋色”也发展至鼎盛时期，每于丰年，以行业或各铺里居民自发组织大型的出秋色活动，一铺发起，全镇二十多铺及四乡群众纷纷前来助兴，通过争雄斗胜的巡游演示，形成独具特色的民俗。</p>
+						<img src="img/fo.jpg" >
+						<p>“佛山秋色”基本内容分为民间工艺品和文艺表演两大类。民间工艺有扎作、砌作、针作、裱塑、雕批等五种，工艺特点是：原材料随手可得，化腐朽为神奇；制作技艺新奇妙肖，以假乱真。文艺表演包括民间音乐、舞蹈、戏剧、杂技、化装表演等五类。秋色巡游的表现形态又分为灯色、马色、车色、地色、水色、飘色、景色等七色。参演群众数千人，巡游队伍长达数里。</p>
+						<img src="img/guazideng.jpg" >
+						<img src="img/qiusedeng.jpg" >
+						<p>佛山秋色大彩灯以及1997年香港庆回归庆典展出的280米的巨龙扎作灯色彩龙，分别载入《吉尼斯世界纪录大全》。扎作彩龙远飞澳大利亚、英国等十多个国家，誉佛山为“彩龙的故乡”。</p>
+			<img src="img/fo3.jpg" >
+			<img src="img/6_whyc.jpg" >
+			
+					</div>
+				</div>
+				<div id="footer">
+					<p>Created by XXXX</p>
+				</div>
+	</body>
+	<script type="text/javascript">
+		for(let i=0;i<$("#header ul li").length;i++){
+			$("#header ul li").eq(i).mouseover(function(){
+				
+				$("#header ul li").eq(i).css("transform","scale(1.2,1.2)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				if(i==0){
+					$("#header ul li").eq(i).css("backgroundColor","#f38181")
+				}else if(i==1){
+					$("#header ul li").eq(i).css("backgroundColor","#eaffd0")
+				}
+				else if(i==2){
+					$("#header ul li").eq(i).css("backgroundColor","#fce38a")
+				}
+				else if(i==3){
+					$("#header ul li").eq(i).css("backgroundColor","#95e1d3")
+				}
+				else if(i==4){
+					$("#header ul li").eq(i).css("backgroundColor","#a8d8ea")
+				}
+				
+			})
+			$("#header ul li").eq(i).mouseout(function(){
+				$("#header ul li").eq(i).css("transform","scale(1,1)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				$("#header ul li").eq(i).css("backgroundColor","white")
+			})
+		}
+	</script>
+</html>

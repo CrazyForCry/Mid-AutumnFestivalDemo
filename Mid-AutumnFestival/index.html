@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<title>中秋节</title>
+	</head>
+	<body>
+		
+		<div id="header">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="wish.html">中秋祝福</a>
+				</li>
+				<li>
+					<a href="legends.html">中秋传说</a>
+				</li>
+				<li>
+					<a href="photos.html">中秋相册</a>
+				</li>
+				<li>
+					<a href="custom.html">文化遗产</a>
+				</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<!-- Swiper -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="img/ba1.png" ></div>
+			        <div class="swiper-slide"><img src="img/ba2.png" ></div>
+			        <div class="swiper-slide"><img src="img/ba3.png" ></div>
+
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			
+			<!-- Swiper JS -->
+			<script src="Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+			
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+			    pagination: '.swiper-pagination',
+			    paginationClickable: true,
+			    direction: 'vertical',
+				autoplay:1500
+			});
+			</script>
+		</div>
+		
+		<div id="container">
+			<ul>
+				<li>
+					<h2>中秋传说</h2>
+					<div>
+						<img src="img/yiwu05.jpg" >
+					</div>
+					<p>对于故事的主人公“嫦娥”，历史典籍亦多论述。“嫦娥”，亦作“姮娥”，即《山海经•大荒西经》所记“生月十二”之常羲。姮娥古音读羲为娥，逐渐演变为奔月之常娥。《文选》注两引《归藏》，均谓常娥服不死药奔月。知常娥神话古有流传，非始于《准南子》。又《准南鸿烈集解》引庄达吉云：“姮娥，诸本皆作恒，唯《意林》作姮...</p>
+				</li>
+				<li>
+					<h2>中秋习俗</h2>
+					<div>
+						<img src="img/yiwu06.jpg" >
+					</div>
+					<p>中秋节又称月节、追月节、拜月节、玩月 节。“暮云收尽溢清寒，银汉无声转玉盘。” 赏月，是中秋的一大习俗。唐人《玩月诗》序 言中说，冬天寒冷，不宜于户外赏月，夏季， 天空常有浮云，月亮的光辉被遮住，只有秋高 气爽的中秋，才具备赏月的条件。从唐代中叶 开始，中秋赏月之风日盛，成为时尚。在明代， 家家设月光菩萨神位，供圆形...</p>
+				</li>
+				<li>
+					<h2>中秋节物</h2>
+					<div>
+						<img src="img/yiwu07.jpg" >
+					</div>
+					<p>北方民间盛行一种卖兔儿爷的风俗。佛
+经里有一个故事，说神仙分别向狐狸、猴子、
+兔子求食，狐狸和猴子都给了食物，唯独兔
+子一贫如洗，它说：“你就吃我的肉吧。”
+然后纵身跳入烈火之中。神仙很感动，就把兔
+子送到月宫。这一神话故事在华北地区流传
+很广。明清的典籍里就有“兔儿爷”的记载，
+述说人们在中秋节用泥塑成兔形，衣冠...</p>
+				</li>
+				<li>
+					<h2>文化遗产</h2>
+					<div>
+						<img src="img/yiwu08.jpg" >
+					</div>
+					<p>它起源于厦门，盛行于漳州的龙海、泉州的安海和金门县等地。每逢中秋佳节，该地区的家家户户或亲朋 好友、社团会馆等都会自发举行“中秋博饼”活动，即通过掷六个骰子的游戏方式，博取状元、榜眼、探花...</p>
+				</li>
+			</ul>
+		</div>
+		<div id="footer">
+			<p>Created by XXXX</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		for(let i=0;i<$("#header ul li").length;i++){
+			$("#header ul li").eq(i).mouseover(function(){
+				
+				$("#header ul li").eq(i).css("transform","scale(1.2,1.2)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				if(i==0){
+					$("#header ul li").eq(i).css("backgroundColor","#f38181")
+				}else if(i==1){
+					$("#header ul li").eq(i).css("backgroundColor","#eaffd0")
+				}
+				else if(i==2){
+					$("#header ul li").eq(i).css("backgroundColor","#fce38a")
+				}
+				else if(i==3){
+					$("#header ul li").eq(i).css("backgroundColor","#95e1d3")
+				}
+				else if(i==4){
+					$("#header ul li").eq(i).css("backgroundColor","#a8d8ea")
+				}
+				
+			})
+			$("#header ul li").eq(i).mouseout(function(){
+				$("#header ul li").eq(i).css("transform","scale(1,1)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				$("#header ul li").eq(i).css("backgroundColor","white")
+			})
+		}
+	</script>
+</html>

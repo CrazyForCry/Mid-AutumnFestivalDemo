@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/photos.css"/>
+		<title>中秋节</title>
+		
+	</head>
+	<body>
+		<div id="background" class="wall"></div>
+		<div id="midground" class="wall"></div>
+		<div id="foreground" class="wall"></div>
+		<div id="header">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="wish.html">中秋祝福</a>
+				</li>
+				<li>
+					<a href="legends.html">中秋传说</a>
+				</li>
+				<li>
+					<a href="photos.html">中秋相册</a>
+				</li>
+				<li>
+					<a href="custom.html">文化遗产</a>
+				</li>
+			</ul>
+		</div>
+		<div id="container">
+			<!-- Swiper -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide" style="background-image:url(img/1_zqjj.jpg)"></div>
+			        <div class="swiper-slide" style="background-image:url(img/2_zqcs.jpg)"></div>
+			        <div class="swiper-slide" style="background-image:url(img/3_zqxs.jpg)"></div>
+			        <div class="swiper-slide" style="background-image:url(img/5_wczq.bmp)"></div>
+			        <div class="swiper-slide" style="background-image:url(img/6_whyc.jpg)"></div>
+			        
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			
+			<!-- Swiper JS -->
+			<script src="Swiper-3.4.2/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+			
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+			    pagination: '.swiper-pagination',
+			    effect: 'coverflow',
+			    grabCursor: true,
+			    centeredSlides: true,
+				autoplay:1500,
+			    slidesPerView: 'auto',
+			    coverflow: {
+			        rotate: 50,
+			        stretch: 0,
+			        depth: 100,
+			        modifier: 1,
+			        slideShadows : true
+			    }
+			});
+			</script>
+		</div>
+		<div id="footer">
+			<p>Created by XXXX</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		for(let i=0;i<$("#header ul li").length;i++){
+			$("#header ul li").eq(i).mouseover(function(){
+				
+				$("#header ul li").eq(i).css("transform","scale(1.2,1.2)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				if(i==0){
+					$("#header ul li").eq(i).css("backgroundColor","#f38181")
+				}else if(i==1){
+					$("#header ul li").eq(i).css("backgroundColor","#eaffd0")
+				}
+				else if(i==2){
+					$("#header ul li").eq(i).css("backgroundColor","#fce38a")
+				}
+				else if(i==3){
+					$("#header ul li").eq(i).css("backgroundColor","#95e1d3")
+				}
+				else if(i==4){
+					$("#header ul li").eq(i).css("backgroundColor","#a8d8ea")
+				}
+				
+			})
+			$("#header ul li").eq(i).mouseout(function(){
+				$("#header ul li").eq(i).css("transform","scale(1,1)");
+				$("#header ul li").eq(i).css("transition","all 1s");
+				$("#header ul li").eq(i).css("backgroundColor","white")
+			})
+		}
+	</script>
+</html>
